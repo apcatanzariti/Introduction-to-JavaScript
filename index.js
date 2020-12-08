@@ -253,10 +253,29 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
-  /*Your Code here */
+
+const yourScore = Math.floor(Math.random() * 101);
+
+function grade(score){
+  if (score <= 100 && score >= 90) {
+    let yourGrade = 'you got an A';
+    return yourGrade;
+  } else if (score <= 89 && score >= 80) {
+    let yourGrade = 'you got a B';
+    return yourGrade;
+  } else if (score <= 79 && score >= 70) {
+    let yourGrade = 'you got a C';
+    return yourGrade;
+  } else if (score <= 69 && score >= 60) {
+    let yourGrade = 'you got a D';
+    return yourGrade;
+  } else {
+    let yourGrade = 'you got an F';
+    return yourGrade;
   }
+}
+
+console.log(grade(yourScore));
   
   
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
